@@ -53,11 +53,15 @@ const { title } = Astro.props;
 		@apply rounded bg-base-300 px-2 py-1 text-xs font-semibold sm:text-sm;
 	}
 
-	.tag-container {
+	.tag-btn-container {
 		@apply flex flex-wrap gap-2;
 	}
 
 	.btn-rounded {
 		@apply rounded transition-all hover:rounded-xl;
+	}
+
+	.text-responsive {
+		@apply text-pretty text-sm xs:text-base;
 	}
 </style>
