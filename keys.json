@@ -1,0 +1,51 @@
+{
+	"experience": [
+		{
+			"position": "Administrativo",
+			"place": "CASA RAMI S.R.L.",
+			"date": "Feb 2022 - Jul 2023",
+			"tasks": [
+				"Gestión, actualización y revisión de archivos y documentos administrativos utilizando el programa Excel, asegurando así la eficiencia y precisión de la información.",
+				"Supervisión rigurosa de los niveles de inventario para garantizar un suministro eficaz de los productos, evitando la escasez y optimizando el uso de los recursos.",
+				"Participación activa en la preparación y empaque de pedidos, garantizando la correcta identificación, clasificación y organización de los productos para facilitar la distribución y el despacho.",
+				"Verificación exhaustiva de los pedidos para garantizar la exactitud según las solicitudes y la calidad del producto antes del envío, lo que resultó en una disminución de errores y un incremento en la satisfacción del cliente."
+			],
+			"tags": [
+				"Office",
+				"Comunicación efectiva",
+				"Gestión del tiempo",
+				"Organización",
+				"Trabajo en equipo"
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Licenciatura en Sistemas",
+			"place": "Universidad Nacional de Lanús",
+			"date": "Feb 2022 - Actualidad",
+			"description": "Durante mi carrera universitaria, he consolidado habilidades enprogramación en C, abarcandodesde estructuras de control hasta estructuras de datosavanzadas, y en Arquitectura de Computadoras, profundizando enlenguaje ensamblador, jerarquía de memorias y sistemasavanzados. También, he desarrollado competencias en la resolución de problemasy diseño de algoritmos, preparándome para aplicar estos conocimientos en desafíostecnológicos complejos.",
+			"tags": [
+				"C",
+				"Ofimática",
+				"Algoritmos",
+				"Arquitectura en computadoras",
+				"Gestión del tiempo"
+			]
+		}
+	],
+	"ninjaKeys": [
+		{
+			"id": "LinkedIn",
+			"url": "https://linkedin.com/in/ignaciorevainera"
+		},
+		{
+			"id": "Github",
+			"url": "https://github.com/ignaciorevainera"
+		},
+		{
+			"id": "Archivo",
+			"url": "/curriculum.pdf"
+		}
+	]
+}
