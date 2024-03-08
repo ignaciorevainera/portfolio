@@ -1,6 +1,7 @@
 ---
-import Header from "@/sections/Header.astro";
 import "@fontsource-variable/geologica";
+import Header from "@/sections/Header.astro";
+import KeyboardManager from "@/KeyboardManager.astro";
 interface Props {
 	title: string;
 }
@@ -30,6 +31,7 @@ const { title } = Astro.props;
 	<body>
 		<Header />
 		<slot />
+		<KeyboardManager />
 	</body>
 </html>
 
