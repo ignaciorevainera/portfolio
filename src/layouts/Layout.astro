@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="author" content="Ignacio Revainera" />
@@ -60,10 +60,14 @@ const { title } = Astro.props;
 	}
 
 	.btn-rounded {
-		@apply rounded transition-all hover:rounded-xl;
+		@apply rounded transition-all hover:rounded-lg;
 	}
 
 	.text-responsive {
 		@apply text-pretty text-sm xs:text-base;
+	}
+
+	.text-title-responsive {
+		@apply text-center text-3xl font-bold xs:text-4xl lg:text-left;
 	}
 </style>
