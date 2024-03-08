@@ -70,4 +70,12 @@ const { title } = Astro.props;
 	.text-title-responsive {
 		@apply text-center text-3xl font-bold xs:text-4xl lg:text-left;
 	}
+
+	.section-technologies {
+		@apply card flex flex-col gap-4 rounded-none bg-base-200 p-6 shadow-2xl transition-all hover:bg-base-300 xs:rounded;
+	}
+
+	.technologies-container {
+		@apply flex flex-row flex-wrap items-center justify-center gap-x-6 *:size-16 xs:*:size-20 sm:*:size-24 md:*:size-auto;
+	}
 </style>
