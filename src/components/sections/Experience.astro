@@ -1,0 +1,28 @@
+---
+import Section from "@/Section.astro";
+import BentoElement from "@/elements/BentoElement.astro";
+import Info from "@/elements/Info.astro";
+
+import { experience } from "keys.json";
+---
+
+<Section title="Experiencia" id="experience">
+	{
+		experience.map(({ position, place, date, tasks, tags }) => (
+			<BentoElement>
+				<Info position={position} place={place} date={date}>
+					<ul class="list-disc space-y-4 pl-8">
+						{tasks.map((task) => (
+							<li>{task}</li>
+						))}
+					</ul>
+					<footer slot="footer-tags" class="tag-btn-container">
+						{tags.map((tag) => {
+							return <span class="tag">{tag}</span>;
+						})}
+					</footer>
+				</Info>
+			</BentoElement>
+		))
+	}
+</Section>
