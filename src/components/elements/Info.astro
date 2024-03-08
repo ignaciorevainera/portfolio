@@ -1,0 +1,21 @@
+---
+const { position, place, date } = Astro.props;
+---
+
+<section class="flex flex-col gap-6">
+	<header
+		class="flex flex-col items-center justify-between gap-2 text-center sm:flex-row sm:gap-0 sm:text-left"
+	>
+		<div>
+			<h2 class="card-title">{position}</h2>
+			<h3 class="font-thin">{place}</h3>
+		</div>
+		<time class="text-xs xs:text-sm sm:text-base">{date}</time>
+	</header>
+
+	<div class="text-responsive">
+		<slot />
+	</div>
+
+	<slot name="footer-tags" />
+</section>

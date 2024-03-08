@@ -1,0 +1,66 @@
+---
+import { Picture } from "astro:assets";
+import BentoElement from "@/elements/BentoElement.astro";
+import Button from "@/elements/Button.astro";
+import InspectCode from "@/icons/Inspect-Code.astro";
+import Internet from "@/icons/Internet.astro";
+
+const { image, alt, name, description, tags, github, deploy } = Astro.props;
+---
+
+<BentoElement>
+	<Picture
+		src={image}
+		formats={["avif", "webp"]}
+		alt={alt}
+		class="aspect-video size-full rounded-none object-cover xs:rounded"
+		slot="image"
+	/>
+
+	<h2 class="card-title">{name}</h2>
+	<p class="text-responsive">
+		{description}
+	</p>
+
+	<footer
+		class="card-actions flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between"
+		slot="footer-tags"
+	>
+		<div class="tag-btn-container">
+			{
+				tags.map((tag: unknown) => (
+					<span
+						class={`tag text-white ${
+							tag === "HTML"
+								? "!bg-[#e34f26]"
+								: tag === "CSS"
+									? "!bg-[#0277bd]"
+									: tag === "JavaScript"
+										? "!bg-[#f7df1e] !text-black"
+										: tag === "Bootstrap"
+											? "!bg-[#7c4dff]"
+											: tag === "TypeScript"
+												? "!bg-[#3178c6]"
+												: tag === "Tailwind CSS"
+													? "!bg-[#00acc1]"
+													: tag === "Astro"
+														? "!bg-[#e63baf]"
+														: ""
+						}`}
+					>
+						{tag}
+					</span>
+				))
+			}
+		</div>
+
+		<div class="tag-btn-container">
+			<Button url={github}>
+				<InspectCode slot="before" /> Código
+			</Button>
+			<Button url={deploy} type="btn btn-rounded btn-accent">
+				<Internet slot="before" /> Visitar
+			</Button>
+		</div>
+	</footer>
+</BentoElement>

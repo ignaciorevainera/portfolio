@@ -1,0 +1,9 @@
+---
+const { url, type = "btn btn-rounded btn-neutral" } = Astro.props;
+---
+
+<a href={url} target="_blank" rel="noopener noreferrer" class={type}>
+	<slot name="before" class={Astro.props.class} />
+	<slot />
+	<slot name="after" />
+</a>
