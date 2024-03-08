@@ -1,0 +1,70 @@
+---
+import Button from "@/elements/Button.astro";
+import Copy from "@/icons/Copy.astro";
+import Resume from "@/icons/Resume.astro";
+import Github from "@/icons/Github.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+---
+
+<section class="mb-12 flex flex-col items-center justify-center gap-6">
+	<header
+		class="mb-4 flex flex-col items-center justify-center gap-4 text-center"
+	>
+		<h1 class="max-w-sm text-balance text-4xl font-bold xs:text-6xl">
+			Ignacio Jesús Revainera
+		</h1>
+		<div class="tag badge !badge-success !text-neutral">
+			Disponible para trabajar
+		</div>
+		<p class="max-w-sm text-balance text-sm xs:text-sm sm:text-lg">
+			Desarrollador Web Frontend con más de 2 años de experiencia.
+		</p>
+	</header>
+	<footer
+		class="flex flex-col flex-wrap items-center justify-center gap-4 xs:flex-row"
+	>
+		<div class="join flex items-center justify-center rounded bg-base-200">
+			<div
+				class="join-item select-none p-4 text-xs xs:px-4 xs:py-0 xs:text-base"
+				id="email-text"
+			>
+				ignacio.revainera@hotmail.com
+			</div>
+			<button
+				class="btn-rounded btn join-item btn-neutral active:bg-success"
+				onclick="copiarContenido()"
+			>
+				<Copy />
+			</button>
+		</div>
+		<div class="flex flex-row gap-2">
+			<Button url="https://www.linkedin.com/in/ignaciorevainera/">
+				<LinkedIn slot="before" />
+			</Button>
+			<Button url="https://github.com/ignaciorevainera">
+				<Github slot="before" />
+			</Button>
+			<Button url="/curriculum.pdf">
+				<Resume slot="before" />
+			</Button>
+		</div>
+	</footer>
+</section>
+
+<script is:inline>
+	let button = document.querySelector(".btn.btn-neutral");
+	let emailText = document.getElementById("email-text");
+	let texto = emailText ? emailText.innerHTML : "";
+	const copiarContenido = async () => {
+		try {
+			await navigator.clipboard.writeText(texto);
+			button.classList.toggle("bg-success");
+			setTimeout(() => {
+				button.classList.toggle("bg-success");
+			}, 500);
+			console.log("Contenido copiado al portapapeles");
+		} catch (err) {
+			console.error("Error al copiar: ", err);
+		}
+	};
+</script>
