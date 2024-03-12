@@ -55,13 +55,18 @@ const { image, alt, name, description, tags, github, deploy } = Astro.props;
 		</div>
 
 		<div class="tag-btn-container">
-			<Button url={github} aria-label="Ir al repositorio de Github">
+			<Button
+				url={github}
+				aria-label="Ir al repositorio de Github"
+				title="Github"
+			>
 				<InspectCode slot="before" /> Código
 			</Button>
 			<Button
 				url={deploy}
 				aria-label="Visitar el sitio web del proyecto"
 				type="btn btn-rounded btn-accent"
+				title="Visitar el sitio web del proyecto"
 			>
 				<Internet slot="before" /> Visitar
 			</Button>

@@ -9,6 +9,7 @@ const { url, type = "btn btn-rounded btn-neutral" } = Astro.props;
 	class={type}
 	aria-label={Astro.props.ariaLabel}
 	role="button"
+	title={Astro.props.title}
 >
 	<slot name="before" class={Astro.props.class} />
 	<slot />
