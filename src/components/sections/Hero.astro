@@ -32,19 +32,26 @@ import Resume from "@/icons/Resume.astro";
 			</div>
 			<button
 				class="btn-rounded btn join-item btn-neutral active:bg-success"
+				aria-label="Copiar al portapapeles"
 				onclick="copiarContenido()"
 			>
 				<Copy />
 			</button>
 		</div>
 		<div class="flex flex-row gap-2">
-			<Button url="https://www.linkedin.com/in/ignaciorevainera/">
+			<Button
+				url="https://www.linkedin.com/in/ignaciorevainera/"
+				aria-label="Visitar el perfil de LinkedIn"
+			>
 				<LinkedIn slot="before" />
 			</Button>
-			<Button url="https://github.com/ignaciorevainera">
+			<Button
+				url="https://github.com/ignaciorevainera"
+				aria-label="Visitar el perfil de Github"
+			>
 				<Github slot="before" />
 			</Button>
-			<Button url="/curriculum.pdf">
+			<Button url="/curriculum.pdf" aria-label="Ver el currículum en pdf">
 				<Resume slot="before" />
 			</Button>
 		</div>
