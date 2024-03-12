@@ -2,6 +2,7 @@
 import "@fontsource-variable/geologica";
 import Header from "@/sections/Header.astro";
 import KeyboardManager from "@/KeyboardManager.astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 interface Props {
 	title: string;
 }
@@ -32,6 +33,7 @@ const { title } = Astro.props;
 		<Header />
 		<slot />
 		<KeyboardManager />
+		<SpeedInsights />
 	</body>
 </html>
 
