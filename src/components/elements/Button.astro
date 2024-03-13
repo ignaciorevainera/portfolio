@@ -8,7 +8,7 @@ const { url, type = "btn btn-rounded btn-neutral" } = Astro.props;
 	rel="noopener noreferrer"
 	class={type}
 	aria-label={Astro.props.ariaLabel}
-	role="button"
+	role="link"
 	title={Astro.props.title}
 >
 	<slot name="before" class={Astro.props.class} />
