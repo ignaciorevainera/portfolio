@@ -2,9 +2,10 @@
 
 Aquí encontrarás una colección de mis proyectos más destacados, experimentos y todo lo relacionado con mi viaje como desarrollador frontend. Me apasiona diseñar y codificar experiencias de usuario que no solo sean visualmente atractivas, sino también funcionales y optimizadas.
 
-![639shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/f753a0a8-4870-4ddf-9def-97d20a55f5c7)
-![189shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/3bc54932-9eca-4f99-a6d2-fe61c246ea6f)
-![690shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/56fc4e7d-2b7c-429e-a31b-e9ee8d16bc50)
+![608shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/b545dd8f-41fa-4900-b4ed-a068a1e43cd4)
+![537shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/473dc209-0904-4f9a-8067-abd30feaca7e)
+![183shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/64e24f39-3b18-41ab-a99c-c0ce950e959c)
+![61shots_so](https://github.com/ignaciorevainera/portfolio/assets/137783616/4d59924f-cf53-4e02-9a11-ae01b30e2aa9)
 
 
 ## ✨ Características
