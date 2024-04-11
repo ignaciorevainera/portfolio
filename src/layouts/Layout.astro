@@ -14,12 +14,18 @@ const { title } = Astro.props;
 <html lang="es" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
+
+		<!-- SEO -->
 		<meta name="author" content="Ignacio Revainera" />
 		<meta
 			name="description"
 			content="Explora el portfolio destacado de un profesional apasionado, repleto de experiencia laboral, formación académica, proyectos innovadores, y un profundo conocimiento del stack tecnológico utilizado en su día a día, todo presentado con un diseño sobrio y minimalista. Ideal para conocer en detalle las tecnologías manejadas y la trayectoria profesional."
 		/>
+
+		<!-- Mobile Responsiveness -->
 		<meta name="viewport" content="width=device-width" />
+
+		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link
@@ -31,6 +37,40 @@ const { title } = Astro.props;
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba" />
 		<meta name="msapplication-TileColor" content="#603cba" />
 		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://ignaciorevainera.me/" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="Ignacio Jesús Revainera | Portfolio"
+		/>
+		<meta
+			property="og:description"
+			content="Explora el portfolio destacado de un profesional apasionado, repleto de experiencia laboral, formación académica, proyectos innovadores, y un profundo conocimiento del stack tecnológico utilizado en su día a día, todo presentado con un diseño sobrio y minimalista. Ideal para conocer en detalle las tecnologías manejadas y la trayectoria profesional."
+		/>
+		<meta
+			property="og:image"
+			content="https://opengraph.b-cdn.net/production/documents/cbd681e2-2358-4e21-8b80-5d468b77a5df.jpg?token=I8EagE_2j973rMbSeNycKDzSQyTtBw41NhSdj-fgIeE&height=540&width=960&expires=33248833886"
+		/>
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="ignaciorevainera.me" />
+		<meta property="twitter:url" content="https://ignaciorevainera.me/" />
+		<meta
+			name="twitter:title"
+			content="Ignacio Jesús Revainera | Portfolio"
+		/>
+		<meta
+			name="twitter:description"
+			content="Explora el portfolio destacado de un profesional apasionado, repleto de experiencia laboral, formación académica, proyectos innovadores, y un profundo conocimiento del stack tecnológico utilizado en su día a día, todo presentado con un diseño sobrio y minimalista. Ideal para conocer en detalle las tecnologías manejadas y la trayectoria profesional."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://opengraph.b-cdn.net/production/documents/cbd681e2-2358-4e21-8b80-5d468b77a5df.jpg?token=I8EagE_2j973rMbSeNycKDzSQyTtBw41NhSdj-fgIeE&height=540&width=960&expires=33248833886"
+		/>
+
 		<title>{title}</title>
 	</head>
 	<body>
